@@ -3,6 +3,8 @@ import { Link } from "@inertiajs/inertia-react";
 const FrontHeader = () => {
   return (
     <>
+      {/* coba git */}
+
       <div
         className="flex items-center justify-around w-full min-h-[500px] px-6 mt-14 text-white text-xl
             bg-slate-900/60 shadow-slate-900/80 shadow-md"
