@@ -128,13 +128,19 @@ const FrontNavbar = ({ authUser, pegawaiLogin }) => {
         </a>
         <a
           href="/about"
-          className="hidden sm:inline-block px-2 md:px-4 py-2 hover:text-slate-100"
+          className={
+            "hidden sm:inline-block px-2 md:px-4 py-2 hover:text-slate-100 " +
+            (linkactive == "about" ? "active" : "")
+          }
         >
           About
         </a>
         <a
           href="/contact"
-          className="hidden sm:inline-block px-2 md:px-4 py-2 hover:text-slate-100"
+          className={
+            "hidden sm:inline-block px-2 md:px-4 py-2 hover:text-slate-100 " +
+            (linkactive == "contact" ? "active" : "")
+          }
         >
           Contact
         </a>
