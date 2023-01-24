@@ -8,7 +8,7 @@ const FrontNavbar = ({ authUser, pegawaiLogin }) => {
   console.log("auth user: ", authUser);
 
   if (authUser) {
-    const userLoginName = authUser.nama.split(/ (.*)/);
+    var userLoginName = authUser.nama.split(/ (.*)/);
   }
   // console.log("userLoginName: ", userLoginName);
 
