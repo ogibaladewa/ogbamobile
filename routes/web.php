@@ -111,6 +111,8 @@ Route::group(['middleware' => ['auth']], function () {
 Route::get('/', [GuestController::class, 'index'])->name('ogbamobile');
 Route::get('/catalog', [GuestController::class, 'catalog'])->name('ogbamobile.catalog');
 Route::get('/productDetail', [GuestController::class, 'detail'])->name('ogbamobile.productDetail');
+Route::get('/about', [GuestController::class, 'about'])->name('ogbamobile.about');
+Route::get('/contact', [GuestController::class, 'contact'])->name('ogbamobile.contact');
 
 
 require __DIR__ . '/auth.php';

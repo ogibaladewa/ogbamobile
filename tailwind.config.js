@@ -25,7 +25,7 @@ module.exports = {
               '100%': { transform: 'translate(0px, 0px)' },
             },
             slideBottom: {
-              '0%': { transform: 'translate(0px, -20px)' },
+              '0%': { transform: 'translate(0px, -100px)' },
               '100%': { transform: 'translate(0px, 0px)' },
             },
             buttonRise: {

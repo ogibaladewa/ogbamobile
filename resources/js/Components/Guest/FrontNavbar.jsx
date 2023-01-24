@@ -7,7 +7,9 @@ const FrontNavbar = ({ authUser, pegawaiLogin }) => {
   const linkactive = window.location.pathname.split("/")[1];
   console.log("auth user: ", authUser);
 
-  const userLoginName = authUser.nama.split(/ (.*)/);
+  if (authUser) {
+    const userLoginName = authUser.nama.split(/ (.*)/);
+  }
   // console.log("userLoginName: ", userLoginName);
 
   const [sidebarClass, setsidebarClass] = useState("sidebar hidden");
@@ -125,13 +127,13 @@ const FrontNavbar = ({ authUser, pegawaiLogin }) => {
           Products
         </a>
         <a
-          href="/#about"
+          href="/about"
           className="hidden sm:inline-block px-2 md:px-4 py-2 hover:text-slate-100"
         >
           About
         </a>
         <a
-          href="/#contact"
+          href="/contact"
           className="hidden sm:inline-block px-2 md:px-4 py-2 hover:text-slate-100"
         >
           Contact

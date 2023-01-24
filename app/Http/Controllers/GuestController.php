@@ -114,4 +114,19 @@ class GuestController extends Controller
             'jumlah' => $jumlah,
         ]);
     }
+
+    public function about(Request $request)
+    {
+        if (Auth::user()) {
+            $pegawaiLogin = Pegawai::join('users', 'pegawai.user_id', '=', 'users.id')
+                ->select('users.id', 'users.nama', 'users.email', 'users.no_hp', 'users.tanggal_lahir', 'users.jenis_kelamin', 'users.alamat', 'pegawai.jabatan', 'users.status')->where('pegawai.user_id', Auth::user()->id)->first();
+        } else {
+            $pegawaiLogin = null;
+        }
+
+        return Inertia::render('OgbaMobile/About', [
+            'title' => 'OgbaMobile',
+            'pegawaiLogin' => $pegawaiLogin,
+        ]);
+    }
 }
