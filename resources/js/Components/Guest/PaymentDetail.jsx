@@ -52,9 +52,9 @@ const PaymentDetail = (props) => {
               </span>
             </div>
             <div className="w-full md:w-5/12 mb-6 sm:md-0">
-              <span className="text-sm text-slate-300">No. Rek (BCA)</span>
+              <span className="text-sm text-slate-300">No. Rek</span>
               <span className="block text-sm sm:text-base md:text-lg pr-4">
-                80294 0212 983 4XX
+                80294 XXX XXX XXX
               </span>
             </div>
             <div className="w-full md:w-2/12 bg-sky-700/0">

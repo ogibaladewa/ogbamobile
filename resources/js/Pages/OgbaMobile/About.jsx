@@ -16,13 +16,13 @@ export default function About(props) {
           pegawaiLogin={props.pegawaiLogin}
         />
         <div
-          className="flex items-center justify-around w-full px-32 pt-32 pb-80 mt-14 text-white text-xl
+          className="flex items-center justify-around w-full px-10 sm:px-32 pt-32 pb-80 mt-14 text-white text-xl
             bg-slate-900/60 shadow-slate-900/80 shadow-md"
         >
           <div className="xl:w-1/12"></div>
           <div className=" animate-slideBottom text-center w-10/12">
             <h1 className="text-sky-500 text-2xl sm:text-4xl mb-6">About Us</h1>
-            <p className="text-slate-300 text-sm sm:text-xl">
+            <p className="text-slate-300 text-md sm:text-xl">
               Ogbamobile is a virtual company created only for owner learning in
               developing websites, all smartphone products on Ogbamobile do not
               belong to Ogbamobile but belong to well-known companies such as
