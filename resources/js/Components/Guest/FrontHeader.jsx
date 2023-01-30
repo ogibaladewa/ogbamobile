@@ -14,14 +14,14 @@ const FrontHeader = () => {
           <h1 className="text-sky-500 text-2xl sm:text-4xl mb-6">
             Bring The World Into Your Hands
           </h1>
-          <p className="text-slate-300 text-sm sm:text-xl">
+          <p className="text-slate-300 text-sm sm:text-base md:text-xl">
             Let's join OgbaMobile to get the best feeling of holding the world
             in your hands. Let's choose the one that's best for you!
           </p>
           <br></br>
           <a
             href="/#products"
-            className="animate-buttonRise px-4 py-2 bg-[#398d83]/60 rounded-md"
+            className="animate-buttonRise px-4 py-2 bg-[#398d83]/60 rounded-md text-base md:text-xl"
           >
             Get Started
           </a>
